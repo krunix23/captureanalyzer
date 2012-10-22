@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 2.6)
+project(CaptureAnalyzer)
+find_package(wxWidgets REQUIRED)
+include( ${wxWidgets_USE_FILE} )
+add_executable( wxcaptureanalyzer captureanalyzer.cpp)
+target_link_libraries( wxcaptureanalyzer  ${wxWidgets_LIBRARIES} )
